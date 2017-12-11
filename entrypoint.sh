@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/bin/clickhouse-client --host=clickhouse-server
+/usr/bin/tail -f /dev/null
