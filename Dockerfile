@@ -17,4 +17,5 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-ENTRYPOINT ["/usr/bin/clickhouse-client --host=clickhouse-server"]
+COPY entrypoint.sh /
+ENTRYPOINT ["/entrypoint.sh"]
